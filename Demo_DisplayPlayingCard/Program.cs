@@ -10,10 +10,44 @@ namespace Demo_DisplayPlayingCard
     {
         static void Main(string[] args)
         {
+            DisplayBasicCard();
+            Console.ReadKey();
+
+            DisplayFancyCard();
+            Console.ReadKey();
+        }
+
+        private static void DisplayFancyCard()
+        {
+            Console.ResetColor();
+            Console.Clear();
+
+            char ulCorner = '\u2554';
+            char llCorner = '\u255A';
+            char urCorner = '\u2557';
+            char lrCorner = '\u255D';
+            char vertical = '\u2551';
+            char horizontal = '\u2550';
+
+
+            Console.Write(horizontal);
+            Console.Write(vertical);
+            Console.Write(ulCorner);
+            Console.Write(urCorner);
+            Console.Write(llCorner);
+            Console.Write(lrCorner);
+
+            Console.ReadKey();
+        }
+
+        public static void DisplayBasicCard()
+        {
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Clear();
 
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.SetCursorPosition(5, 2);
             Console.WriteLine("**********");
 
