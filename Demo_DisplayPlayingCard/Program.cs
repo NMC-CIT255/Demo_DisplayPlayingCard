@@ -19,6 +19,8 @@ namespace Demo_DisplayPlayingCard
 
         private static void DisplayFancyCard()
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+
             Console.ResetColor();
             Console.Clear();
 
@@ -28,14 +30,19 @@ namespace Demo_DisplayPlayingCard
             char lrCorner = '\u255D';
             char vertical = '\u2551';
             char horizontal = '\u2550';
+            char spade = '\u2660';
 
+            Console.WriteLine();
 
-            Console.Write(horizontal);
-            Console.Write(vertical);
-            Console.Write(ulCorner);
-            Console.Write(urCorner);
-            Console.Write(llCorner);
-            Console.Write(lrCorner);
+            Console.WriteLine(horizontal);
+            Console.WriteLine(vertical);
+            Console.WriteLine(ulCorner);
+            Console.WriteLine(urCorner);
+            Console.WriteLine(llCorner);
+            Console.WriteLine(lrCorner);
+
+            Console.WriteLine();
+            Console.WriteLine(spade);
 
             Console.ReadKey();
         }
